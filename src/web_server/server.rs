@@ -11,8 +11,8 @@ pub fn start() -> Result<(), Box<dyn Error>> {
     println!("Web server is running on {}...", addr);
 
     for stream in listener.incoming() {
-        let mut stream = stream?;
         // connection socket
+        let mut stream = stream?;
         let mut message = vec![0; 1024];
         stream.read(&mut message)?;
 
