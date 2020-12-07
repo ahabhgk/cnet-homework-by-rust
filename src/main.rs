@@ -24,9 +24,7 @@ fn main() {
             client_thread.join().unwrap();
             println!("client closed, then close the server by return from `main`");
         }
-        3 => {
-            smtp::client::start();
-        }
+        3 => smtp::client::start(),
         _ => panic!("Stay turned..."),
     }
 }

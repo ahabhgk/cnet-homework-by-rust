@@ -1,10 +1,10 @@
 # cnet-homework-by-rust
 
 ```shell
-cargo run {lab_number}
+cargo run {lab_num}
 ```
 
-| lab_number | name |
+| lab_num | name |
 |:----------:|:----:|
 | 1 | web server |
 | 2 | udp ping |
